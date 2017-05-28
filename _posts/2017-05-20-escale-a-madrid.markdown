@@ -2,9 +2,9 @@
 title: Escale à Madrid
 date: 2017-05-20 13:34:00 +02:00
 categories:
-  - Voyage
+- Voyage
 tags:
-  - Panier
+- Panier
 ---
 
 Escale à Madrid.

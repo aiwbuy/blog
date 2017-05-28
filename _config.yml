@@ -8,14 +8,14 @@ collections:
   uploads:
     title: Uploads
     output: true
-permalink: "/:categories/:title/"
 defaults:
-  - scope:
-      type: posts
-      path: _posts
-    values:
-      layout: post
-      image:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    image: 
+permalink: "/:categories/:title/"
 gems:
 - jekyll-feed
 - jekyll-paginate-v2
@@ -28,6 +28,6 @@ pagination:
 autopages:
   enabled: true
   categories:
-    permalink: '/:cat'
+    permalink: "/:cat"
   tags:
-    permalink: '/:tag'
+    permalink: "/:tag"
