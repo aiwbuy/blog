@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Dans mon panier</h1>
+
+<ul>
+  {% for post in paginator.posts reversed %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include pagination.html %}

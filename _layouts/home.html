@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul>
+  {% for post in paginator.posts reversed %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+{% include pagination.html %}

@@ -1,0 +1,10 @@
+<ul>
+  {% for category in site.categories | sort %}
+    {% assign cat = category | first %}
+    <li>
+      <a href="/{{ cat | slugify }}">
+        {{ cat }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
