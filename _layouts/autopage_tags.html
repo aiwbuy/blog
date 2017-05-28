@@ -6,11 +6,7 @@ layout: default
 
 <ul>
   {% for post in paginator.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </li>
+    {% include grid_item.html post=post %}
   {% endfor %}
 </ul>
 

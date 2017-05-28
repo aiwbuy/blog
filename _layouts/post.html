@@ -4,6 +4,10 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 
+{% for image in page.images %}
+  <img src="{{ image }}" />
+{% endfor %}
+
 {{ content }}
 
 {% if page.tags contains 'Panier' %}

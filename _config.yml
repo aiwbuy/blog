@@ -14,8 +14,9 @@ defaults:
     type: posts
   values:
     layout: post
-    image: 
-permalink: "/:categories/:title/"
+    images:
+      -
+permalink: /:title/
 gems:
 - jekyll-feed
 - jekyll-paginate-v2
@@ -30,6 +31,8 @@ pagination:
 autopages:
   enabled: true
   categories:
-    permalink: "/:cat"
+    permalink: /:cat
+    title: :cat
   tags:
-    permalink: "/:tag"
+    permalink: /:tag
+    title: :tag

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>{{ page.title }} ~ All I Wanna Buy</title>
+  <title>{% if page.layout contains 'autopage' %}{{ page.autopages.display_name }}{% else %}{{ page.title }}{% endif %} ~ All I Wanna Buy</title>
 </head>
 <body>
   {% include nav.html %}

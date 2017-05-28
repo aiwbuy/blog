@@ -1,0 +1,8 @@
+<li>
+  <a href="{{ post.url | relative_url }}">
+    <img src="{{ post.images | first | escape }}" />
+  </a>
+  <a href="{{ post.url | relative_url }}">
+    {{ post.title | escape }}
+  </a>
+</li>
