@@ -5,7 +5,7 @@ layout: default
 <h1>Dans mon panier</h1>
 
 <ul>
-  {% for post in paginator.posts reversed %}
+  {% for post in paginator.posts %}
     <li>
       <a href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
