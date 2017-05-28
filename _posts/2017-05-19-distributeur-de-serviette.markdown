@@ -2,7 +2,7 @@
 title: Distributeur de serviette
 date: 2017-05-18 15:39:00 +02:00
 images:
-  - "/uploads/distributeur-de-serviettes-en-metal-rouge-.jpg"
+  - "/uploads/distributeur-de-serviettes-en-metal-rouge-.png"
 categories:
   - Déco
 tags:

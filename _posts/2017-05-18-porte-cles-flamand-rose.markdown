@@ -2,7 +2,7 @@
 title: Porte Clés Flamand rose
 date: 2017-05-18 16:09:00 +02:00
 images:
-  - "/uploads/porte-cle-corail.jpg"
+  - "/uploads/porte-cle-corail.png"
 categories:
   - Accessoires
 tags:
