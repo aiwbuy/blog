@@ -3,6 +3,7 @@ title: Une cabane, vous dîtes ?
 date: 2017-05-28 14:22:00 +02:00
 categories:
 - Projets
+- Gourmandises
 tags:
 - Panier
 ---
