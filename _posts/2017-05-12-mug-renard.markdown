@@ -2,7 +2,7 @@
 title: Mug renard
 date: 2017-05-12 14:49:00 +02:00
 categories:
-- Déco
+- Deco
 images:
 - "/uploads/mug-renard.jpg"
 ---

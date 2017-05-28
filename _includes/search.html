@@ -1,0 +1,76 @@
+<div id="search-view">
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <div class="modal-card-title">
+          <form @submit="search">
+            <div class="field">
+              <p class="control">
+                <input class="input" id="query" name="query" v-model="query" type="search" placeholder="collier, flamant rose, noix de cajou, ..." autofocus="autofocus" style="width: 90%; padding: 1.5rem;">
+              </p>
+            </div>
+          </form>
+        </div>
+        <button class="delete" style="padding: 1rem;"></button>
+      </header>
+      <section class="modal-card-body">
+
+        {% raw %}
+
+          <div class="notification" v-if="results.length == 0">
+            Désolé, aucun résultat trouvé.
+          </div>
+
+          <article class="media" v-for="item in results">
+            <figure class="media-left">
+              <p class="image is-128x128" style="overflow: hidden;">
+                <a v-bind:href="item.url">
+                  <img :src="item.image" />
+                </a>
+              </p>
+            </figure>
+            <div class="media-content">
+              <h1 class="title is-4" style="margin-bottom: 0.5rem;">
+                <a v-bind:href="item.url">
+                  {{item.title}}
+                </a>
+              </h1>
+              <div v-html="item.content"></div>
+            </div>
+          </article>
+
+        {% endraw %}
+
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.searchItemsArray = [
+    {% for item in site.posts %}
+      {
+        "title": "{{ item.title | strip | xml_escape }}",
+        "image": "{{ item.images | first | strip }}",
+        "excerpt": {{ item.excerpt | jsonify }},
+        "content": {{ item.content | jsonify }},
+        "url": "{{ item.url | strip | relative_url | replace: '/index.html', '' }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  window.searchItemsObject = {
+    {% for item in site.posts %}
+      "{{ item.url | strip | relative_url | replace: '/index.html', '' }}": {
+        "title": "{{ item.title | strip | xml_escape }}",
+        "image": "{{ item.images | first | strip }}",
+        "excerpt": {{ item.excerpt | jsonify }},
+        "content": {{ item.content | jsonify }},
+        "url": "{{ item.url | strip | relative_url | replace: '/index.html', '' }}"
+      }
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>

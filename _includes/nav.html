@@ -1,24 +1,126 @@
 {% assign counter = site.tags.Panier.size %}
 
-<ul>
-  <li>
-    <a href="/">
-      Accueil
-    </a>
-  </li>
-  <li>
-    <a href="/a-propos">
-      A propos
-    </a>
-  </li>
-  <li>
-    <a href="#">
-      Recherche
-    </a>
-  </li>
-  <li>
-    <a href="/panier/">
-      Panier ({{ counter }})
-    </a>
-  </li>
-</ul>
+<nav class="nav">
+  <div class="container">
+
+    <div class="nav-left is-hidden-mobile">
+      <a class="nav-item">
+        <div class="brand">
+          <a href="/" style="color: #fff;">
+            <span>All I Wanna</span>
+            <span class="brand-last">Buy</span>
+          </a>
+        </div>
+      </a>
+    </div>
+
+    <div class="nav-center is-hidden-tablet">
+      <a class="nav-item">
+        <div class="brand">
+          <a href="/" style="color: #fff;">
+            All I Wanna Buy
+          </a>
+        </div>
+      </a>
+    </div>
+
+    <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+    <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+    <span class="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+
+    <!-- This "nav-menu" is hidden on mobile -->
+    <!-- Add the modifier "is-active" to display it on mobile -->
+    <div class="nav-right nav-menu">
+
+      {% if page.url == '/panier/index.html' %}
+        {% assign extra_style = "background-color: #ffdd57;" %}
+      {% else %}
+        {% assign extra_style = "" %}
+      {% endif %}
+
+      <div href="#" class="nav-item is-hidden-tablet" style="display: block; padding: 0;">
+        <nav class="level is-mobile">
+          <div class="level-item has-text-centered" style="padding-top: 9px">
+            <a href="#" class="nav-item-search">
+              <p class="heading">Recherche</p>
+              <p class="title">
+                <i class="fa fa-search"></i>
+              </p>
+            </a>
+          </div>
+          <div class="level-item has-text-centered" style="padding-top: 9px; {{ extra_style }}">
+            <a href="/panier/">
+              <p class="heading">Dans mon panier ({{ counter }})</p>
+              <p class="title">
+                <i class="fa fa-shopping-bag "></i>
+              </p>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      {% if page.url == '/index.html' %}
+        {% assign extra_class = "is-active" %}
+      {% else %}
+        {% assign extra_class = "" %}
+      {% endif %}
+
+      <a href="/" class="nav-item {{ extra_class }}">
+        <span>Mes trouvailles</span>
+      </a>
+
+      {% for item in site.shelves %}
+
+        {% assign page_contains_current_shelf = false %}
+        {% for shelf in page.shelves %}
+          {% if item.url contains shelf %}
+            {% assign page_contains_current_shelf = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if page.url == item.url or page_contains_current_shelf %}
+          {% assign extra_class = "is-active" %}
+        {% else %}
+          {% assign extra_class = "" %}
+        {% endif %}
+
+        <a href="{{ item.url | relative_url | replace: '/index.html', '' }}" class="nav-item is-hidden-tablet {{ extra_class }}" style="padding-top: .25rem; padding-bottom: .25rem; padding-left: 2rem;">
+          <span>{{ item.title }}</span>
+        </a>
+
+      {% endfor %}
+
+      {% if page.url == '/a-propos/' %}
+        {% assign extra_class = "is-active" %}
+      {% else %}
+        {% assign extra_class = "" %}
+      {% endif %}
+
+      <a href="/a-propos" class="nav-item {{ extra_class }}">
+        <span>A propos</span>
+      </a>
+
+      <a class="nav-item is-hidden-mobile nav-item-search">
+        <i class="fa fa-search"></i>
+      </a>
+
+      {% if page.url == '/panier/index.html' %}
+        {% assign extra_class = "is-active" %}
+      {% else %}
+        {% assign extra_class = "" %}
+      {% endif %}
+
+      <a href="/panier" class="nav-item nav-item-shopping-bag is-hidden-mobile {{ extra_class }}">
+        <i class="fa fa-shopping-bag "></i>
+        <span class="tag is-warning shopping-bag-tag">
+          {{ counter }}
+        </span>
+      </a>
+
+    </div>
+  </div>
+</nav>

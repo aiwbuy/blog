@@ -2,7 +2,7 @@
 title: Magnet paon
 date: 2017-05-12 17:01:00 +02:00
 categories:
-- Déco
+- Deco
 tags:
 - Panier
 images:

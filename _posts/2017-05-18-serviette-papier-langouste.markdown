@@ -2,7 +2,7 @@
 title: Serviette papier langouste
 date: 2017-05-18 15:32:00 +02:00
 categories:
-- Déco
+- Deco
 images:
 - "/uploads/serviette%20papier%20.jpg"
 ---

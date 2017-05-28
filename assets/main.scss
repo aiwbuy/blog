@@ -1,0 +1,164 @@
+---
+---
+
+$fa-font-path: "/assets/fonts";
+
+$family-primary: "Roboto Condensed", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$link: hsl(0, 0%, 4%);
+
+@import "font-awesome/font-awesome";
+@import "bulma";
+@import "ui";
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.container {
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.page-wrap {
+  @media (min-width: 769px) {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.nav {
+  background-color: $black;
+
+  @media (min-width: $tablet) {
+    height: 4rem;
+  }
+}
+
+.nav-item {
+  // color: $grey-light !important;
+  text-transform: uppercase;
+  font-size: .9rem;
+
+  @media (max-width: 768px) {
+    color: $black !important;
+
+    &:hover {
+      color: $black !important;
+      background-color: $white-bis !important;
+    }
+
+    &.is-active {
+      color: $black !important;
+      background-color: $warning !important;
+
+      .shopping-bag-tag {
+        background-color: $white !important;
+      }
+    }
+  }
+
+  @media (min-width: 769px) {
+    color: $grey-light !important;
+
+    &:hover {
+      color: $white !important;
+    }
+
+    &.is-active {
+      color: $white !important;
+    }
+  }
+}
+
+.nav-right {
+  .nav-item {
+    &.nav-item-shopping-bag {
+      @media (max-width: 768px) {
+        padding-top: .25rem !important;
+        padding-bottom: .25rem !important;
+      }
+    }
+  }
+}
+
+.nav-toggle {
+  span {
+    background-color: $grey-light !important;
+  }
+
+  &:hover {
+    background-color: $warning;
+
+    span {
+      background-color: $black !important;
+    }
+  }
+
+  &.is-active {
+    background-color: $warning;
+  }
+}
+
+.brand {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  line-height: 24px;
+
+  .nav-item {
+    @media (min-width: $tablet) {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.brand-last {
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.shopping-bag-tag {
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+  margin-bottom: 1rem !important;
+  margin-left: -.5rem !important;
+}
+
+.item-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: .4rem;
+}
+
+.sidebar-item {
+  &.is-active {
+    background-color: $warning !important;
+    color: $black !important;
+  }
+}
+
+.grid-item {
+  margin-bottom: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;
+
+  @media (min-width: 769px) {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  #search-view {
+    .modal-card {
+      margin: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}

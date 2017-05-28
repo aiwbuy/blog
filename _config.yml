@@ -15,7 +15,7 @@ defaults:
   values:
     layout: post
     images:
-    - 
+    -
 permalink: "/:title/"
 gems:
 - jekyll-feed
@@ -25,15 +25,15 @@ exclude:
 - Gemfile.lock
 pagination:
   enabled: true
-  per_page: 12
+  per_page: 6
   sort_field: date
   sort_reverse: true
   permalink: "/page/:num/"
 autopages:
   enabled: true
   categories:
-    permalink: "/:cat"
+    permalink: "/:cat/"
     title: :cat
   tags:
-    permalink: "/:tag"
+    permalink: "/:tag/"
     title: :tag

@@ -2,14 +2,26 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="columns">
 
-{% for image in page.images %}
-  <img src="{{ image }}" />
-{% endfor %}
+  <div class="is-half column">
+    {% for image in page.images %}
+      <img src="{{ image }}" />
+    {% endfor %}
+  </div>
 
-{{ content }}
-
-{% if page.tags contains 'Panier' %}
-  <p>Dans mon panier</p>
-{% endif %}
+  <div class="is-half column">
+    <h1 class="title">{{ page.title }}</h1>
+    {{ content }}
+    {% if page.tags contains 'Panier' %}
+      <p style="margin-top: 1rem;">
+        <a class="button is-warning" href="/mon-panier">
+          <span class="icon">
+            <i class="fa fa-check"></i>
+          </span>
+          <span>C'est dans mon panier !</span>
+        </a>
+      </p>
+    {% endif %}
+  </div>
+</div>

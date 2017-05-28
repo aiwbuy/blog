@@ -2,7 +2,7 @@
 title: Statuette Flamant rose
 date: 2017-05-12 14:30:00 +02:00
 categories:
-- Déco
+- Deco
 tags:
 - Panier
 images:

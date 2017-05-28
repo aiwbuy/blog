@@ -2,7 +2,7 @@
 title: Mug Flamant rose
 date: 2017-05-12 14:40:00 +02:00
 categories:
-- Déco
+- Deco
 images:
 - "/uploads/mug-flamant-rose.jpg"
 ---

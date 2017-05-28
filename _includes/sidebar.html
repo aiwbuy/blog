@@ -1,10 +1,45 @@
-<ul>
-  {% for category in site.categories | sort %}
-    {% assign cat = category | first %}
-    <li>
-      <a href="/{{ cat | slugify }}">
+<aside class="menu is-hidden-mobile">
+  <p class="menu-label">
+    Catégories
+  </p>
+  <ul class="menu-list">
+
+    {% if page.url == '/index.html' %}
+      {% assign extra_class = "is-active" %}
+    {% else %}
+      {% assign extra_class = "" %}
+    {% endif %}
+
+    <a href="/" class="sidebar-item {{ extra_class }}">
+      Toutes
+    </a>
+
+    {% if page.url == '/panier/index.html' %}
+      {% assign extra_class = "is-active" %}
+    {% else %}
+      {% assign extra_class = "" %}
+    {% endif %}
+
+    <a href="/panier" class="sidebar-item {{ extra_class }}">
+      Dans mon panier
+    </a>
+
+    {% for category in site.categories | sort %}
+
+      {% assign cat = category | first %}
+      {% assign cat_url = cat | slugify | relative_url %}
+      {% assign current_url = page.url | remove: '/index.html' %}
+
+      {% if current_url == cat_url %}
+        {% assign extra_class = "is-active" %}
+      {% else %}
+        {% assign extra_class = "" %}
+      {% endif %}
+
+      <a href="{{ cat | slugify | relative_url }}" class="sidebar-item {{ extra_class }}">
         {{ cat }}
       </a>
-    </li>
-  {% endfor %}
-</ul>
+
+    {% endfor %}
+  </ul>
+</aside>

@@ -2,7 +2,7 @@
 title: Bol quinoa-oeuf-patate douce
 date: 2017-05-12 16:44:00 +02:00
 categories:
-- Délices
+- Delices
 images:
 - "/uploads/healthy-bowl.jpg"
 ---

@@ -2,7 +2,7 @@
 title: Distributeur de serviette
 date: 2017-05-18 15:39:00 +02:00
 categories:
-- Déco
+- Deco
 tags:
 - Panier
 images:
