@@ -1,12 +1,12 @@
 ---
 title: Combinaison dentelle
 date: 2017-05-12 13:26:00 +02:00
-images:
-  - "/uploads/combi_zara.png"
 categories:
-  - Fringues
+- Fringues
 tags:
-  - Panier
+- Panier
+images:
+- "/uploads/combi_zara.png"
 ---
 
 Craquage total pour cette combinaison totally classe! à sortir pour une occasion spéciale ou tout simplement pour se la raconter et se faire complimenter! Elle est déjà dans mon placard et, tout comme moi, attend l'été. A shopper d'urgence chez [zara](https://www.zara.com/fr/fr/femme/combinaisons/combinaison-en-dentelle-assortie-c399001p4298230.html)
