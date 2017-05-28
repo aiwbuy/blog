@@ -25,3 +25,13 @@ layout: default
     {% endif %}
   </div>
 </div>
+
+<div class="has-text-centered" style="margin-top: 2rem; margin-bottom: 2rem;">
+  <h2 class="title">Derniers ajouts</h2>
+</div>
+
+<div class="grid" id="grid">
+  {% for post in site.posts limit: 12 %}
+    {% include grid_item.html post=post %}
+  {% endfor %}
+</div>

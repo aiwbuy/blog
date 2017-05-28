@@ -15,7 +15,7 @@ defaults:
   values:
     layout: post
     images:
-    - 
+    -
 permalink: "/:title/"
 gems:
 - jekyll-feed
@@ -25,7 +25,7 @@ exclude:
 - Gemfile.lock
 pagination:
   enabled: true
-  per_page: 6
+  per_page: 12
   sort_field: date
   sort_reverse: true
   permalink: "/page/:num/"

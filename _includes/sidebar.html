@@ -1,3 +1,5 @@
+{% assign counter = site.tags.Panier.size %}
+
 <aside class="menu is-hidden-mobile">
   <p class="menu-label">
     Catégories
@@ -11,7 +13,7 @@
     {% endif %}
 
     <a href="/" class="sidebar-item {{ extra_class }}">
-      Toutes
+      Toutes ({{ site.posts.size }})
     </a>
 
     {% if page.url == '/panier/index.html' %}
@@ -21,7 +23,7 @@
     {% endif %}
 
     <a href="/panier" class="sidebar-item {{ extra_class }}">
-      Dans mon panier
+      Dans mon panier ({{ counter }})
     </a>
 
     {% for category in site.categories | sort %}
@@ -37,7 +39,8 @@
       {% endif %}
 
       <a href="{{ cat | slugify | relative_url }}" class="sidebar-item {{ extra_class }}">
-        {{ cat }}
+        {% assign cat_items = category | last %}
+        {{ cat }} ({{ cat_items.size }})
       </a>
 
     {% endfor %}

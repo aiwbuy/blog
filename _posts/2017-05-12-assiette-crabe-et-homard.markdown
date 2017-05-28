@@ -2,7 +2,9 @@
 title: Assiette Crabe et Homard
 date: 2017-05-12 16:51:00 +02:00
 categories:
-- Delices
+- Deco
+tags:
+- Panier
 images:
 - "/uploads/plat%20crabe.jpg"
 ---

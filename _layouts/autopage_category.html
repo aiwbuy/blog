@@ -4,10 +4,10 @@ layout: default
 
 <h1 class="title">{{ page.autopages.display_name }}</h1>
 
-<ul>
+<div class="grid" id="grid">
   {% for post in paginator.posts %}
     {% include grid_item.html post=post %}
   {% endfor %}
-</ul>
+</div>
 
 {% include pagination.html %}

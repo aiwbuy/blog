@@ -1,8 +1,10 @@
-<li>
+<div class="grid-item">
   <a href="{{ post.url | relative_url }}">
-    <img src="{{ post.images | first | escape }}" />
+    <div style="position; absolute; background-color: #fcfcfc;">
+      <img src="{{ post.images | first | escape }}" />
+    </div>
+    <div class="item-title">
+      {{ post.title | escape }}
+    </div>
   </a>
-  <a href="{{ post.url | relative_url }}">
-    {{ post.title | escape }}
-  </a>
-</li>
+</div>
