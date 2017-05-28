@@ -14,7 +14,7 @@ defaults:
     type: posts
   values:
     layout: post
-    image:
+    image: 
 permalink: "/:categories/:title/"
 gems:
 - jekyll-feed
@@ -25,7 +25,7 @@ exclude:
 pagination:
   enabled: true
   per_page: 6
-  sort_field: 'date'
+  sort_field: date
   sort_reverse: true
 autopages:
   enabled: true
