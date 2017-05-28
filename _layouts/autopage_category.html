@@ -5,7 +5,7 @@ layout: default
 <h1>{{ page.autopages.display_name }}</h1>
 
 <ul>
-  {% for post in paginator.posts %}
+  {% for post in paginator.posts reversed %}
     <li>
       <a href="{{ post.url | relative_url }}">
         {{ post.title | escape }}
