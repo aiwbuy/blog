@@ -28,7 +28,7 @@ pagination:
   per_page: 12
   sort_field: date
   sort_reverse: true
-  permalink: '/page/:num/'
+  permalink: "/page/:num/"
 autopages:
   enabled: true
   categories:
