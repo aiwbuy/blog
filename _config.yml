@@ -15,7 +15,7 @@ defaults:
   values:
     layout: post
     images:
-    -
+    - 
 permalink: "/:title/"
 gems:
 - jekyll-feed
