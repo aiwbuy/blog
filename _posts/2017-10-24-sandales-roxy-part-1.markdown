@@ -5,6 +5,8 @@ categories:
 - Fringues
 tags:
 - Panier
+images:
+- "/uploads/Roxy%20Emilia%20Sandales%20Women.jpg"
 ---
 
 [Sandales ](http://www.laredoute.fr/ppdp/prod-505710443.aspx)
