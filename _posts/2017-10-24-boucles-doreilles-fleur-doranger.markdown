@@ -1,6 +1,10 @@
 ---
 title: boucles d'oreilles Fleur d'oranger
 date: 2017-10-24 14:15:00 +02:00
+categories:
+- Bijoux
+tags:
+- Panier
 images:
 - "/uploads/les-nereides-boucles-d-oreilles-dormeuses-fleur-d-oranger-eclatante-discretion-A2.jpg"
 ---
