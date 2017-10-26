@@ -5,4 +5,4 @@ images:
 - "/uploads/sandales-roxy-cordilia.jpg"
 ---
 
-[Sandales ](https://www.cdiscount.com/chaussures/sandales-roxy-cordilia/f-150-mp03000495.html)
+Je me vois déjà dedans les pieds en éventail cet été. Ces [roxy ]([Sandales ](https://www.cdiscount.com/chaussures/sandales-roxy-cordilia/f-150-mp03000495.html))sont à shopper d'urgence! 
