@@ -7,4 +7,4 @@ images:
 - "/uploads/1219968800_6_1_3.jpg"
 ---
 
-[legging](https://www.oysho.com/fr/sport/pantalons/leggings-bloc-de-couleur-et-motifs-transparents-c1469136p101070884.html?typeCategory=0)
+[legging](https://www.oysho.com/fr/sport/pantalons/leggings-bloc-de-couleur-et-motifs-transparents-c1469136p101070884.html?typeCategory=0) classy-classe pour avoir le style au cours de freestyle! 
