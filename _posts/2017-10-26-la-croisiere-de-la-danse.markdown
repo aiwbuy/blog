@@ -3,6 +3,8 @@ title: La croisière de la danse
 date: 2017-10-26 14:18:00 +02:00
 categories:
 - Voyages
+images:
+- "/uploads/EV.jpg"
 ---
 
 Lorsque j'ai découvert cette offre signée vente privée, je suis presque tombée de ma chaise. Un de mes rêves les plus fous: un bateau, une crosière, des cours de danse, des cours de danse avec Maxime et Denitsa mais Pincez-moi... 
