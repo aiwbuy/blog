@@ -1,6 +1,8 @@
 ---
 title: Sandales Roxy Part 2
 date: 2017-10-24 15:19:00 +02:00
+categories:
+- Fringues
 images:
 - "/uploads/sandales-roxy-cordilia.jpg"
 ---
