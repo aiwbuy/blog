@@ -9,4 +9,4 @@ images:
 - "/uploads/SW_Gummy_Pink_1254.jpg"
 ---
 
-[veste](https://fr.begummy.com/collections/adultes/products/veste-rose-fluo-femme)
+J'ai longtemps résisté et j'ai finalement craqué pour cette veste [Be Gummy]([veste](https://fr.begummy.com/collections/adultes/products/veste-rose-fluo-femme)). Un très doux retour à l'enfance. A porter pour les balades en forêt le dimanche après-midi!
